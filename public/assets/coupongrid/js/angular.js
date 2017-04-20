@@ -159,12 +159,11 @@ $scope.returnvar = function(){
     else
             $scope.returnVariable = 1;
 };
-    $scope.changeDestination = function(i) {
-    $scope.destination = i;
-};
-        $scope.changeSource = function(i) {
-    $scope.source = i;
-};
+$scope.changeDirection = function(){
+    $scope.tmp = $scope.source; 
+    $scope.source = $scope.destination;
+    $scope.destination = $scope.tmp;
+    };  
     
   $scope.change = function(){
       $scope.hideit=true;
