@@ -195,7 +195,7 @@ $window.localStorage.setItem("Dor",document.querySelector("#dateofreturn1").valu
   });
   }; 
     
-  $http.get("http://developer.goibibo.com/api/bus/search/?app_id=088b6d3a&app_key=b4522f7e802050d368a7122708c8c697&format=json&source="+$scope.source+"&destination="+$scope.destination+"&dateofdeparture="+$scope.journeydat+"&dateofarrival="+$scope.returndat+"").then(function (response) {
+  $http.get("https://developer.goibibo.com/api/bus/search/?app_id=088b6d3a&app_key=b4522f7e802050d368a7122708c8c697&format=json&source="+$scope.source+"&destination="+$scope.destination+"&dateofdeparture="+$scope.journeydat+"&dateofarrival="+$scope.returndat+"").then(function (response) {
           $scope.banData = response.data;
       console.log(response.data);
 angular.forEach($scope.banData, function (banData) {
