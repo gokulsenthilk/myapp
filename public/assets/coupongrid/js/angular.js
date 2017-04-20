@@ -159,6 +159,12 @@ $scope.returnvar = function(){
     else
             $scope.returnVariable = 1;
 };
+    $scope.changeDestination = function(i) {
+    $scope.destination = i;
+};
+        $scope.changeSource = function(i) {
+    $scope.source = i;
+};
     
   $scope.change = function(){
       $scope.hideit=true;
@@ -166,7 +172,7 @@ $scope.returnvar = function(){
     document.getElementById('id01').style.display='none';  $window.localStorage.setItem("Doj",document.querySelector("#seldate").value);
       $scope.doj=$window.localStorage.getItem("Doj");
      $scope.journeydat= ($scope.doj).replace(/[/]/g, '');
-    console.log($scope.journeydat);  $http.get("http://developer.goibibo.com/api/bus/search/?app_id=088b6d3a&app_key=b4522f7e802050d368a7122708c8c697&format=json&source="+$scope.source+"&destination="+$scope.destination+"&dateofdeparture="+$scope.journeydat+"").then(function (response) {  
+    console.log($scope.journeydat);  $http.get("https://developer.goibibo.com/api/bus/search/?app_id=088b6d3a&app_key=b4522f7e802050d368a7122708c8c697&format=json&source="+$scope.source+"&destination="+$scope.destination+"&dateofdeparture="+$scope.journeydat+"").then(function (response) {  
             $scope.banData = response.data;
        
             $scope.myVar=0;             
@@ -188,7 +194,7 @@ $window.localStorage.setItem("Dor",document.querySelector("#dateofreturn1").valu
  $scope.dor=$window.localStorage.getItem("Dor");
  $scope.returndat= ($scope.dor).replace(/[/]/g, '');
           }
-          $http.get("http://developer.goibibo.com/api/bus/search/?app_id=088b6d3a&app_key=b4522f7e802050d368a7122708c8c697&format=json&source="+$scope.source+"&destination="+$scope.destination+"&dateofdeparture="+$scope.journeydat+"&dateofarrival="+$scope.returndat+"").then(function (response) {  
+          $http.get("https://developer.goibibo.com/api/bus/search/?app_id=088b6d3a&app_key=b4522f7e802050d368a7122708c8c697&format=json&source="+$scope.source+"&destination="+$scope.destination+"&dateofdeparture="+$scope.journeydat+"&dateofarrival="+$scope.returndat+"").then(function (response) {  
             $scope.banData = response.data;
        
             $scope.myVar=0;             
