@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" href="assets/images/logo/favicon.png" type="image/png">
+<meta name="description" content="">
+<title>Show Me More Deals</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+<link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
+<link rel="stylesheet" href="assets/et-line-font-plugin/style.css">
+<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+<link rel="stylesheet" href="assets/tether/tether.min.css">
+<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/dropdown/css/style.css">
+<link rel="stylesheet" href="assets/animate.css/animate.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="assets/socicon/css/styles.css">
+<link rel="stylesheet" href="assets/theme/css/style.css">
+<link rel="stylesheet" href="assets/mobirise-gallery/style.css">
+<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="assets/productmenu/css/component.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+   
+<style>
+
+.active {
+    border-bottom:2px solid black;
+}
+.material-icons{
+  font-size:18px;
+  color: #FB8C00;
+}
+    .embed-submit-field {
+  position: relative;
+}
+.embed-submit-field input {
+  width: 100%;
+  padding-left: 15px;
+}
+.embed-submit-field button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+    height: 100%;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  transition: all .2s;
+}
+.embed-submit-field button:hover {
+  background-color: #37C88D;
+  color: #fff;
+  cursor: pointer;
+}
+td{
+border-right:1px solid black;
+
+}
+</style>
+</head>
+<body ng-app="myApp" ng-controller="categoryCtrl">
+<section id="menu-0">
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top">
+        <div class="container">
+
+            <div class="mbr-table">
+                <div class="mbr-table-cell">
+
+                    <div class="navbar-brand">
+                         <a class="" href="/" height="100%" width="50px"><img src="assets/images/logo/logo.png" height="100%" width="120px"></a>
+                    </div>
+
+                </div>
+                
+                <div class="mbr-table-cell w3-hide-medium">
+                   <form ng-submit="searchproduct();">
+                             <div class="embed-submit-field">
+      <input class="w3-input w3-border w3-large w3-round-large" ng-model="product" type="text" placeholder="Search... "/>
+      <button type="submit" class="w3-round"><i class="material-icons" style=" vertical-align: middle;">searchr</i></button>
+    </div>
+                                </form> 
+                </div>
+                
+                <div class="mbr-table-cell">
+
+                    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="hamburger-icon"></div>
+                    </button>
+
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar"><li id="products" class="nav-item"><a class="nav-link link active" href="/"><span><i class="material-icons">add_shopping_cart</i></span>&nbsp;PRODUCTS</a></li><li class="nav-item"><a class="nav-link link" href="http://travel.gokulsenthil.com"><i class="material-icons">flight</i>&nbsp;FLIGHTS</a></li><li class="nav-item"><a class="nav-link link" href="http://project.gokulsenthil.com"><i class="material-icons">hotel</i>&nbsp;HOTELS</a></li><li class="nav-item"><a class="nav-link link" href="desktopbus.html"><i class="material-icons">directions_bus</i>&nbsp;BUS</a></li></ul>
+                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="close-icon"></div>
+                    </button>
+
+                </div>
+            </div>
+<div class="mbr-table" style="background-color:white;">
+   <table class="w3-table w3-centered">
+    
+   <tr>
+                    
+
+        <td style="padding-left:0;padding-right:0;" > 
+            
+            <div id="dl-menu" class="dl-menuwrapper" style="padding-left:0;padding-right:0;" >
+            
+         <a class="dl-trigger"><i class="material-icons" style=" vertical-align: middle;">list</i>&nbsp;All Categories&nbsp;<i class="material-icons" style=" vertical-align: middle;">keyboard_arrow_down</i></a>
+        
+        <ul class="dl-menu scrollbar" id="style-6"  style="width:120%;">
+        
+            
+            <li class="force-overflow">
+                <a href="#">Accessories</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Men</a>
+                        <ul class="dl-submenu">
+                            <li><a href ng-click="comaparefalse('socks-men')">Socks</a></li>
+                            <li><a href ng-click="comaparefalse('belts-accessories-men')">Belts</a></li>
+                            <li><a href ng-click="comaparefalse('ties-cufflinks-accessories-men')">Ties and Cufflinks</a></li>
+                            <li><a href ng-click="comaparefalse('watches-men')">Watches</a></li>
+                            <li><a href ng-click="comaparefalse('sunglasses-accessories-men')">Sunglasses</a></li>
+                    
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                        <ul class="dl-submenu">
+                            <li><a href ng-click="comaparefalse('sunglasses-accessories-women')">Sunglasses</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Children</a>
+                        <ul class="dl-submenu">
+                            <li><a href ng-click="comaparefalse('sunglasses-kids')">Sunglasses</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Accessories and Peripherals</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="searchcategory('computer-mouse')">Mouse</a></li>
+                    <li><a href ng-click="searchcategory('computer-speaker')">Speakers</a></li>
+                    <li><a href ng-click="searchcategory('computer-keyboard')">Keyboards</a></li>
+                    <li><a href ng-click="comaparefalse('computer-webcam')">Webcams</a></li>
+                    <li><a href ng-click="comaparefalse('computer-laptop-battery')">Laptop Batteries</a></li>
+                    <li><a href ng-click="comaparefalse('computer-laptop-chargers')">Laptop Chargers and Adapters</a></li>
+                    <li><a href ng-click="comaparefalse('computer-cooling-pads-and-stands')">Cooling Pads</a></li>
+                    <li><a href ng-click="comaparefalse('computer-monitor')">Monitors</a></li>
+                    <li><a href ng-click="comaparefalse('laptop-docking-stations')">Laptop Docking Stations</a></li>
+                    <li><a href ng-click="comaparefalse('laser-pointers')">Laser Pointers</a></li>
+                    <li><a href ng-click="comaparefalse('microphones')">Microphones</a></li>
+                    <li><a href ng-click="comaparefalse('portable-computer-screen-filters')">Laptop Screen Protectors</a></li>
+                    <li><a href ng-click="comaparefalse('presentation-remotes')">Presentation Remotes</a></li>
+                    <li><a href ng-click="comaparefalse('touch-pads')">Touch Pads</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Baby and Toddler Toys</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('baby-gym-kids')">Infant Play Gyms</a></li>
+                    <li><a href ng-click="comaparefalse('blocks-kids')">Blocks and Stacking Games</a></li>
+                    <li><a href ng-click="comaparefalse('dolls-baby-kids')">Dolls and Dollhouses</a></li>
+                    <li><a href ng-click="comaparefalse('pull-along-toys-kids')">Pull Along Toys</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Baby Clothing</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('frocks-kids')">Frocks</a></li>
+                    <li><a href ng-click="comaparefalse('blankets-kids')">Blankets, Quilts and Wraps</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Badminton</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('grips')">Grips</a></li>
+                    <li><a href ng-click="comaparefalse('raquets')">Raquets</a></li>
+                    <li><a href ng-click="comaparefalse('shuttles')">Shuttles</a></li>
+                    <li><a href ng-click="comaparefalse('strings')">Strings</a></li>   
+                </ul>
+            </li>
+            
+            
+            <li>
+                <a href="#">Bags</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Men</a>
+                        <ul class="dl-submenu">
+                            <li><a href ng-click="comaparefalse('wallets-bags-men')">Wallets</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                        <ul class="dl-submenu">
+                            <li><a href ng-click="comaparefalse('handbag-bags-women')">Handbags</a></li>
+                            <li><a href ng-click="comaparefalse('wallets-women')">Wallets</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            
+            <li>
+                <a href="#">Basket Ball</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('basketball-boards')">Basketball Boards</a></li>
+                    <li><a href ng-click="comaparefalse('basketballs')">Basketballs</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Bath and Skin Care</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('lotions-oils-and-powders')">Lotions, Oils and Powders</a></li>
+                    <li><a href ng-click="comaparefalse('soaps-shampoo-and-body-wash')">Soaps, Shampoo and Body Wash</a></li>
+                </ul>
+            </li>
+            
+            
+            <li>
+                <a href="#">Boy Clothing</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('tshirts-boys-clothing-kids')">Tshirts</a></li>
+                    <li><a href ng-click="comaparefalse('jeans-trousers-boys-clothing-kids')">Jeans and Trousers</a></li>
+                    <li><a href ng-click="comaparefalse('ethnicwear-boys-clothing-kids')">Ethnic Wear</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Boys Footwear</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('casual-shoes-boys-kids')">Casual Shoes</a></li>
+                    <li><a href ng-click="comaparefalse('sandals-boys-kids')">Sandals</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Camera Accessories</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('flashes')">Camera Flashes</a></li>
+                    <li><a href ng-click="comaparefalse('camera-remote-controls')">Camera Remote Controls</a></li>
+                    <li><a href ng-click="comaparefalse('rechargeable-batteries')">Rechargeable Batteries</a></li>
+                    <li><a href ng-click="comaparefalse('battery-chargers')">Battery Chargers</a></li>
+                    <li><a href ng-click="comaparefalse('viewfinder-extenders')">Viewfinder Extenders</a></li>
+                    <li><a href ng-click="comaparefalse('camera-and-camcorder-batteries')">Camera and Camcorder batteries</a></li>
+                    <li><a href ng-click="comaparefalse('camera-screen-protectors')">Camera Screen Protectors</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cameras, DSLRs & Accessories</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('tripods')">Tripods</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cameras, DSLRs & More</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('digital-camera')">Digital Cameras</a></li>
+                    <li><a href ng-click="comaparefalse('digital-slr-camera')">Digital SLR Cameras</a></li>
+                    <li><a href ng-click="comaparefalse('camcorder')">Camcorders</a></li>
+                    <li><a href ng-click="comaparefalse('digital-photo-frames')">Digital Photo Frames</a></li>
+                    <li><a href ng-click="comaparefalse('binoculars')">Binoculars</a></li>
+                    <li><a href ng-click="comaparefalse('surveillance-cameras')">Surveillance Cameras</a></li>
+                    <li><a href ng-click="comaparefalse('camera-screen-protectors')">Camera Screen Protectors</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Car Mobile Accessories</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('car-chargers')">Car Chargers</a></li>
+                    <li><a href ng-click="comaparefalse('car-kits')">Car Kits</a></li>
+                    <li><a href ng-click="comaparefalse('car-cradles')">Car Cradles & Mounts</a></li>
+                    <li><a href ng-click="comaparefalse('gps-navigation-devices')">GPS Navigation Devices</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Clothings</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Men</a>
+                        <ul class="dl-submenu">
+                            <li><a href ng-click="comaparefalse('casual-shirts-clothing-men')">Casual Shirts</a></li>
+                            <li><a href ng-click="comaparefalse('tshirts-clothing-men')">T-Shirts</a></li>
+                            <li><a href ng-click="comaparefalse('formal-shirts-clothing-men')">Formal Shirts</a></li>
+                            <li><a href ng-click="comaparefalse('jeans-bottoms-clothing-men')">Jeans</a></li>
+                            <li><a href ng-click="comaparefalse('trousers-bottoms-clothing-men')">Pants & Trousers</a></li>
+                            <li><a href ng-click="comaparefalse('shorts-3-4th-bottoms-clothing-men')">Shorts & 3/4ths</a></li>
+                            <li><a href ng-click="comaparefalse('ethnic-clothing-men')">Ethnic Wear</a></li>
+                    
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                        <ul class="dl-submenu">
+                            <li><a href ng-click="comaparefalse('tops-clothing-women')">Shirts,Tops & Tees</a></li>
+                            <li><a href ng-click="comaparefalse('dress-clothing-women')">Dresses</a></li>
+                            <li><a href ng-click="comaparefalse('jeans-bottoms-clothing-women')">Jeans</a></li>
+                            <li><a href ng-click="comaparefalse('trousers-bottoms-clothing-women')">Trousers</a></li>
+                            <li><a href ng-click="comaparefalse('leggings-women')">Leggings</a></li>
+                            <li><a href ng-click="comaparefalse('skirts-bottoms-clothing-women')">Skirts</a></li>
+                            <li><a href ng-click="comaparefalse('shrugs-and-jackets-clothing-women')">Shrugs & Jackets</a></li>
+                            <li><a href ng-click="comaparefalse('maternity-clothing-women')">Maternity</a></li>
+                            <li><a href ng-click="comaparefalse('sportswear-women')">Sportswear</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Cricket</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('cricket-balls')">Cricket Balls</a></li>
+                    <li><a href ng-click="comaparefalse('cricket-bats')">Cricket Bats</a></li>
+                    <li><a href ng-click="comaparefalse('cricket-gloves')">Cricket Gloves</a></li>
+                    <li><a href ng-click="comaparefalse('cricket-guards')">Cricket Guards</a></li>
+                    <li><a href ng-click="comaparefalse('cricket-helmets')">Cricket Helmets</a></li>
+                    <li><a href ng-click="comaparefalse('cricket-kit-bags')">Cricket Kit Bags</a></li>
+                    <li><a href ng-click="comaparefalse('cricket-sets')">Cricket Sets</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Cycling</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('bicycle-accessories')">Bicycle Accessories</a></li>
+                    <li><a href ng-click="comaparefalse('bicycles')">Bicycles</a></li>
+                    
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Decor</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('religion-and-spirituality-decor-home-decor')">Religion & Spirituality</a></li>
+                    <li><a href ng-click="comaparefalse('clocks-decor')">Clocks</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">Desktop & Components</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('desktop')">Desktop</a></li>
+                    <li><a href ng-click="comaparefalse('graphic-cards')">Graphic Cards</a></li>
+                    <li><a href ng-click="comaparefalse('internal-hard-disk')">Internal Hard Drives</a></li>
+                    <li><a href ng-click="comaparefalse('motherboards')">Motherboards</a></li>
+                    <li><a href ng-click="comaparefalse('smps-power-supplies')">Power Supply Unit</a></li>
+                    <li><a href ng-click="comaparefalse('processor-fans')">Processor Fans & Cooling</a></li>
+                    <li><a href ng-click="comaparefalse('processors')">Processors</a></li>
+                    <li><a href ng-click="comaparefalse('ram')">RAM</a></li>
+                    <li><a href ng-click="comaparefalse('sound-cards')">Sound Cards</a></li>
+                    <li><a href ng-click="comaparefalse('tv-tuners')">TV Tuners</a></li>
+                    <li><a href ng-click="comaparefalse('computer-cabinets')">Computer Cabinets</a></li>
+                </ul>
+            </li>
+            
+            
+            
+            
+            <li>
+                <a href="#">Electronics</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Camera &amp; Photo</a></li>
+                    <li><a href="#">TV &amp; Home Cinema</a></li>
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#">PC &amp; Video Games</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Furniture</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Living Room</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Sofas &amp; Loveseats</a></li>
+                            <li><a href="#">Coffee &amp; Accent Tables</a></li>
+                            <li><a href="#">Chairs &amp; Recliners</a></li>
+                            <li><a href="#">Bookshelves</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Bedroom</a>
+                        <ul class="dl-submenu">
+                            <li>
+                                <a href="#">Beds</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">Upholstered Beds</a></li>
+                                    <li><a href="#">Divans</a></li>
+                                    <li><a href="#">Metal Beds</a></li>
+                                    <li><a href="#">Storage Beds</a></li>
+                                    <li><a href="#">Wooden Beds</a></li>
+                                    <li><a href="#">Children's Beds</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bedroom Sets</a></li>
+                            <li><a href="#">Chests &amp; Dressers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Home Office</a></li>
+                    <li><a href="#">Dining &amp; Bar</a></li>
+                    <li><a href="#">Patio</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Jewelry &amp; Watches</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Fine Jewelry</a></li>
+                    <li><a href="#">Fashion Jewelry</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li>
+                        <a href="#">Wedding Jewelry</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Engagement Rings</a></li>
+                            <li><a href="#">Bridal Sets</a></li>
+                            <li><a href="#">Women's Wedding Bands</a></li>
+                            <li><a href="#">Men's Wedding Bands</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Diapering</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('cloth-diapers')">Cloth Diapers</a></li>
+                    <li><a href ng-click="comaparefalse('disposable-diapers')">Disposable Diapers</a></li>
+                    <li><a href ng-click="comaparefalse('diaper-creams')">Diaper Creams</a></li>
+					<li><a href ng-click="comaparefalse('wipes')">Wipes</a></li>
+					<li><a href ng-click="comaparefalse('potty-training-kids')">Potty Training & Step Stools</a></li>
+                </ul>
+            </li>
+            
+			
+             <li>
+                <a href="#">Ethnic Clothing</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('kurta-ethnic-women')">Kurtas & Kurtis</a></li>
+                    <li><a href ng-click="comaparefalse('sarees-ethnic-women')">Sarees</a></li>
+                    <li><a href ng-click="comaparefalse('suits-ethnic-women')">Suit Sets</a></li>
+					<li><a href ng-click="comaparefalse('salwars-churidars-women')">Salwars & Churidars</a></li>
+					<li><a href ng-click="comaparefalse('dressmaterial-ethnic-women')">Dress Materials</a></li>
+                </ul>
+            </li>
+            
+            <li>
+                <a href="#">Exercise & Fitness</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('cross-and-elliptical-trainers')">Cross & Elliptical trainers</a></li>
+                    <li><a href ng-click="comaparefalse('dumbbells')">Dumbbells</a></li>
+                    <li><a href ng-click="comaparefalse('weighing-scales')">Weighing Scales</a></li>
+					
+                </ul>
+            </li>
+			
+			<li>
+                <a href="#">Eyeglasses</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('eyeglasses-men')">Eyeglasses</a></li>
+                    
+                </ul>
+            </li>
+			
+			
+            
+            <li>
+                <a href="#">Eyes</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('eye-liner')">Eye Liner</a></li>
+                    <li><a href ng-click="comaparefalse('eye-shadows')">Eye Shadow</a></li>
+                    <li><a href ng-click="comaparefalse('kajal')">Kajal</a></li>
+					
+                </ul>
+            </li>
+			
+			<li>
+                <a href="#">Face</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('bb-and-cc-cream')">BB & CC Creams</a></li>
+                    <li><a href ng-click="comaparefalse('blush-and-bronzer')">Blush</a></li>
+                    <li><a href ng-click="comaparefalse('bronzer')">Bronzer</a></li>
+					<li><a href ng-click="comaparefalse('compact')">Compact Powder</a></li>
+                    <li><a href ng-click="comaparefalse('eye-make-up-remover')">Makeup Remover</a></li>
+                    <li><a href ng-click="comaparefalse('face-concealer')">Concealer</a></li>
+					<li><a href ng-click="comaparefalse('foundation-and-compacts')">Foundation</a></li>
+                    <li><a href ng-click="comaparefalse('primer')">Primer</a></li>
+                    <li><a href ng-click="comaparefalse('earrings-jewellery-women')">Earrings</a></li>
+                </ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">Fancy Jewellery</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('earrings-jewellery-women')">Earrings</a></li>
+                    <li><a href ng-click="comaparefalse('necklace-jewellery-women')">Necklace & Sets</a></li>
+                                    
+				</ul>
+				
+            </li>
+			<li>
+                <a href="#">Flash & Accessories</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('adapter-rings')">Adapter Rings</a></li>
+                    <li><a href ng-click="comaparefalse('shoe-mounts')">Shoe Mounts</a></li>
+                    <li><a href ng-click="comaparefalse('diffusers-and-modifiers')">Diffusers & Modifiers</a></li>                
+				</ul>
+				
+            </li>
+			
+			
+			<li>
+                <a href="#">Football</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('football-accessories')">Football Accessories</a></li>
+                    <li><a href ng-click="comaparefalse('football-gloves')">Football Gloves</a></li>
+                    <li><a href ng-click="comaparefalse('football-guards')">Football Guards</a></li>
+					<li><a href ng-click="comaparefalse('footballs')">Footballs</a></li>
+				</ul>
+				
+            </li>
+			
+			
+			<li>
+                <a href="#">Fragrance</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('body-mist')">Body Mist</a></li>
+                    <li><a href ng-click="comaparefalse('men-deos')">Men Deos</a></li>
+                    <li><a href ng-click="comaparefalse('men-perfumes')">Men Perfumes</a></li>
+					<li><a href ng-click="comaparefalse('women-deos')">Women Deos</a></li>
+					<li><a href ng-click="comaparefalse('women-perfumes')">Women Perfumes</a></li>
+				</ul>
+				
+            </li>
+			
+			
+			<li>
+                <a href="#">Furniture</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('bean-seatings-furniture-home')">Bean Bags</a></li>
+                    
+				</ul>
+				
+            </li>
+			
+			
+			<li>
+                <a href="#">Gaming & Accessories</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('gaming-console')">Gaming Console</a></li>
+                    
+				</ul>
+				
+            </li>
+			
+			
+			<li>
+                <a href="#">Gear</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('rockers-kids')">Bouncers, Rockers & Swings</a></li>
+                    <li><a href ng-click="comaparefalse('strollers-kids')">Strollers, Prams & Car Seats</a></li>
+                    <li><a href ng-click="comaparefalse('high-chairs-kids')">High Chairs & Booster Seats</a></li>
+					<li><a href ng-click="comaparefalse('ride-ons-kids')">Bikes & Ride Ons</a></li>
+					
+				</ul>
+				
+            </li>
+			
+		
+			<li>
+                <a href="#">Girl Clothing</a>
+				<ul class="dl-submenu">
+				<li>
+				
+				
+				
+				
+				
+				<a href="#">girls-clothing-kids</a>
+                <ul class="dl-submenu">   
+                    <li><a href ng-click="comaparefalse('dresses-frocks-girls-clothing-kids')">Dresses & Frocks</a></li>
+                    <li><a href ng-click="comaparefalse('tops-tunics-girls-clothing-kids')">Tops & T-Shirts</a></li>
+                    
+				</ul>	
+					<a href="#">girls-footwear-kids</a>
+				    <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('ethnicwear-girls-clothing-kids')">Ethnic Wear</a></li>
+                    					
+				</ul>
+				</li>
+				
+          
+			
+			<li>
+                <a href="#">Hardware Tools</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('power-tools')">Power Tools</a></li>
+                    <li><a href ng-click="comaparefalse('hand-tools')">Hand Tools</a></li>
+                    <li><a href ng-click="comaparefalse('measuring-tools')">Measuring Tools</a></li>
+					<li><a href ng-click="comaparefalse('tool-accessories')">Tool Accessories</a></li>
+					
+				</ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">Headphones & Headsets</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('headphones')">Headphones</a></li>
+                    <li><a href ng-click="comaparefalse('headsets')">Wired Headsets</a></li>
+                    <li><a href ng-click="comaparefalse('bluetooth-headsets')">Bluetooth Headsets</a></li>
+					
+					
+				</ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">Headphones & Memory Cards</a>
+                <ul class="dl-submenu">
+                    <li><a href ng-click="comaparefalse('memory-cards')">MicroSD Memory Cards</a></li>
+                    <li><a href ng-click="comaparefalse('sd-memory-cards')">SD Memory Cards</a></li>
+                    
+					
+				</ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">Health Care Products</a>
+                <ul class="dl-submenu">
+                    
+                    <li><a href ng-click="comaparefalse('bp-monitors')">BP Monitor</a></li>
+                    <li><a href ng-click="comaparefalse('digital-thermometers')">Digital Thermometer</a></li>
+					<li><a href ng-click="comaparefalse('nebulizers')">Nebulizer</a></li>
+                    <li><a href ng-click="comaparefalse('massagers')">Massager</a></li>
+                    <li><a href ng-click="comaparefalse('pulse-oximeters')">Pulse Oximeter</a></li>
+                    <li><a href ng-click="comaparefalse('heat-therapy')">Heating Pad</a></li>
+					<li><a href ng-click="comaparefalse('blood-glucose-monitors')">Glucometer</a></li>
+                    <li><a href ng-click="comaparefalse('body-fat-monitors')">Body Fat Analyzer</a></li>
+                    <li><a href ng-click="comaparefalse('pedometer-step-counters')">Pedometer</a></li>
+				</ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">Heaters, Fans & Coolers</a>
+                <ul class="dl-submenu">
+                    
+                    <li><a href ng-click="comaparefalse('air-coolers')">Air Coolers</a></li>
+                    <li><a href ng-click="comaparefalse('fans')">Fans</a></li>
+					<li><a href ng-click="comaparefalse('geysers')">Geysers</a></li>
+                    <li><a href ng-click="comaparefalse('immersion-rods')">Immersion Rods</a></li>
+                    <li><a href ng-click="comaparefalse('room-heaters')">Room Heaters</a></li>
+                    
+				</ul>
+				
+            </li>
+			<li>
+                <a href="#">Home & Kitchen Appliances</a>
+                <ul class="dl-submenu">
+                    
+                    <li><a href ng-click="comaparefalse('lighting')">Lighting & Lamps</a></li>
+                    
+                    
+				</ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">Home Appliances</a>
+                <ul class="dl-submenu">
+                    
+                    <li><a href ng-click="comaparefalse('irons')">Irons</a></li>
+                    <li><a href ng-click="comaparefalse('washing-machines')">Washing Machines</a></li>
+					<li><a href ng-click="comaparefalse('refrigerators')">Refrigerators</a></li>
+                    <li><a href ng-click="comaparefalse('emergency-light')">Emergency Lights</a></li>
+                    <li><a href ng-click="comaparefalse('air-conditioner')">Air Conditioners</a></li>
+					<li><a href ng-click="comaparefalse('vacuum-cleaners')">Vacuum Cleaners</a></li>
+                    <li><a href ng-click="comaparefalse('inverters-batteries')">Inverters & Batteries</a></li>
+					<li><a href ng-click="comaparefalse('dishwashers')">Dishwashers</a></li>
+                    <li><a href ng-click="comaparefalse('spike-surge-protectors')">Spike Surge Protectors</a></li>
+                    <li><a href ng-click="comaparefalse('power-supplies')">UPS</a></li>
+                    <li><a href ng-click="comaparefalse('voltage-stabilizers')">Voltage Stabilizers</a></li>
+                   
+				</ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">Home Linen</a>
+                <ul class="dl-submenu">
+                    
+                    <li><a href ng-click="comaparefalse('bedsheets-bed-linen-bed-bath-home-decor')">Bedsheets & Sets</a></li>
+                    <li><a href ng-click="comaparefalse('curtains-cushions-decor')">Curtains & Cushions</a></li>
+					<li><a href ng-click="comaparefalse('carpets-rugs-decor')">Carpets, Rugs & Mats</a></li>
+                    <li><a href ng-click="comaparefalse('towels-bath-essentials-bed-bath-home-decor')">Towels</a></li>
+                    <li><a href ng-click="comaparefalse('quilts-blankets')">Quilts & Blankets</a></li>
+				</ul>
+				
+            </li>
+            
+			<li>
+                <a href="#">Innerwear & Sleepwear</a>
+                <ul class="dl-submenu">
+                    
+                    <li><a href ng-click="comaparefalse('briefs-men')">Briefs</a></li>
+                    <li><a href ng-click="comaparefalse('boxers-men')">Boxers</a></li>
+					<li><a href ng-click="comaparefalse('nightsuits-men')">Night Suits</a></li>
+                    
+				</ul>
+				
+            </li>
+			
+			<li>
+                <a href="#">iPods, Home Theaters & DVD Players</a>
+                <ul class="dl-submenu">
+                    
+                    <li><a href ng-click="searchcategory('ipod-mp3')">MP3 Players</a></li>
+                    <li><a href ng-click="comaparefalse('home-theaters')">Home Theaters</a></li>
+					<li><a href ng-click="comaparefalse('video-players')">Video & DVD Players</a></li>
+                    <li><a href ng-click="comaparefalse('projectors')">Projectors</a></li>
+                    <li><a href ng-click="comaparefalse('smart-tv')">Smart TV Boxes</a></li>
+					<li><a href ng-click="comaparefalse('voice-recorders')">Voice Recorders</a></li>
+                    <li><a href ng-click="comaparefalse('av-receivers')">AV Receivers</a></li>
+					<li><a href ng-click="comaparefalse('sound-amplifiers')">Sound Amplifiers</a></li>
+                    <li><a href ng-click="comaparefalse('boom-boxes')">Boom Boxes</a></li>
+                    <li><a href ng-click="comaparefalse('fm-radio')">FM Radio</a></li>
+                    
+					
+				</ul>
+				
+            </li>
+        </ul>
+            </li>
+                </ul>
+            </div> 
+            
+     </td> 
+        <td class="w3-hide-small" ng-click="searchlist('mobiles');">Mobiles</td>
+        <td class="w3-hide-small" ng-click="searchlist('computers');">Computers</td>
+        <td class="w3-hide-small" ng-click="searchlist('appliances');">Appliances</td>
+        <td class="w3-hide-small" ng-click="searchlist('personalcare');">Personal Care</td>
+        <td class="w3-hide-small" ng-click="searchlist('tv');">TV/Entertainment</td>        
+        </tr>
+    </table>
+            </div>
+        </div>
+    </nav>
+
+</section>
+
+  
+
+ <section ng-show="myVar" class="mbr-section mbr-section-hero mbr-section-full header2 mbr-parallax-background mbr-after-navbar" id="header2-1" style="background-color: cornsilk;margin-top:120px;">
+<br><br>
+    <div class="mbr-table">
+        <div class="container">
+              
+                
+<div class="fadeIn row w3-content w3-display-container" style="height:200px;">
+
+<div class="w3-display-container mySlides">
+  <img src="assets/images/bg1.jpg" style="width:100%;height:200px;">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    Trolltunga, Norway
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="assets/images/bus.jpg" style="width:100%;height:200px;">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Northern Lights, Norway
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="assets/images/desktop.jpg" style="width:100%;height:200px;">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Beautiful Mountains
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="assets/images/room-laptop.jpg" style="width:100%;height:200px;">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    The Rain Forest
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="assets/images/table.jpg" style="width:100%;height:200px;">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Mountains!
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+            </div>
+
+        </div>
+    
+     <br><br>
+<div class="mbr-table w3-center w3-row-padding">
+    
+    
+     <div class="w3-container" ng-init="val= list">
+          
+        
+        <div  ng-repeat="x in lists" >
+            
+
+   <div ng-repeat="y in x[val]" style="margin-top:25px;" class="w3-third w3-container">
+  <a href ng-click="searchcategory(y)"><img ng-src="assets/images/{[{val}]}/{[{y}]}.png" onerror="this.src='assets/images/errorimage.png'" width="60%" height="250px">
+       <br>
+        <h4 class="elipsis" ng-bind="y" style="text-transform:capitalize;"></h4></a>
+       <!-- <p>Lowest Price : Rs. <span style="font-weight:bold;" ng-bind="x.product_lowest_price"></span></p>
+        <p>Product Category : <span ng-bind="x.product_category"></span></p>
+        <button ng-click="displayProduct(x.product_id,x.can_compare);" class="w3-button w3-block w3-teal">View Product</button> -->
+</div> 
+            
+            
+</div> 
+           </div>
+   
+         <br> 
+     </div>
+
+</section> 
+    
+<div ng-hide="myVar" class="loading">
+  <div class="loading-bar"></div>
+  <div class="loading-bar"></div>
+  <div class="loading-bar"></div>
+  <div class="loading-bar"></div>
+</div>
+            
+    
+
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    
+    <script src="assets/productmenu/js/jquery.dlmenu.js"></script>
+   <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/smooth-scroll.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/viewport-checker/jquery.viewportchecker.js"></script>
+  <script src="assets/jarallax/jarallax.js"></script>
+  <script src="assets/masonry/masonry.pkgd.min.js"></script>
+  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+ 
+    <script src="assets/coupongrid/js/angular.js"></script>
+    <script>
+  
+    </script>
+    <script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-5', classout : 'dl-animate-out-5' }
+				});
+			});
+		</script>
+    
+    <script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  <input name="animation" type="hidden">
+  </body>
+</html>
